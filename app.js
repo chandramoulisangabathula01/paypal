@@ -89,7 +89,7 @@ function sendMoney() {
     updateBalanceDisplay();
 
     const checkmarkImage = document.createElement("img");
-    checkmarkImage.src = "images/greencheckmark.png";
+    checkmarkImage.src = "greencheckmark.png";
     checkmarkImage.alt = "Checkmark";
     checkmarkImage.classList.add("checkmark-image");
 
