@@ -11,18 +11,27 @@
     top: 0 !important;
     left: 0 !important;
     position: relative !important;
-    background-color: #001c64 !important;
+    background-color: #142c8e !important;
     
 }
 .nav-item{
     margin:10px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    color: #d1f1ff;
+
     
 
 }
+.custom-navbar{
+    --bs-navbar-brand-margin-end: 3rem;
+}
 
 #navibar{
-    background-color: #001c64 !important;
+    background-color: #142c8e!important;
+    
 }
 
 .dropdown-menu{
@@ -39,12 +48,16 @@
 }
 
 
-
+.heading1-h1{
+    margin: 20px 0 10px 0;
+    color: #19d19d;
+}
 /* paypal-container-body */
 
 .paypal-container {
     /* background-color: #009cde; */
-    background-color: #fdfafa;
+    /* background-color: #fdfafa; */
+    background-color: #fff;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -74,7 +87,15 @@ body {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: url('paypal.png') no-repeat center center;
+    background: url('images/paypal.png') no-repeat center center;
+    background-size: cover;
+    margin: 0 auto 20px;
+}
+.transimg{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: url('images/greenCheck.png') no-repeat center center;
     background-size: cover;
     margin: 0 auto 20px;
 }
@@ -135,16 +156,29 @@ button {
 /* Style for the transparent button */
 .transparent-button {
     border: 1px solid transparent;
-    color: #fffcfc; 
+    /* color: #fffcfc;  */
+    color: #d1f1ff;
     transition: border-color 0.3s, color 0.3s; /* Smooth transition */
-    padding: 05px 10px;
-    font-size: 20px;
+    padding: 05px 10px 8px;
+    /* font-size: 20px; */
     border-radius: 16px;
     display: flex;
     text-decoration: none;
     text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 1.15;
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; */
 }
+.settings-img{
+    height: auto;
+    background: url('images/settings1.png') no-repeat center center;
 
+}
 /* Hover effect */
 .transparent-button:hover {
     border-color: #ffefef; /* Border color on hover */
@@ -171,11 +205,39 @@ button {
     font-size: 16px;
     font-weight: bold;
 }
-
-
-
-
-
-
-
-
+#success-message{
+    font-size:large;
+    font-weight: 700;
+    border-bottom:130px ;
+    
+}
+p{
+    font-size:medium
+}
+.Moremoney{
+    /* background-color: #001c64 !important; */
+    color: #fff;
+    background: #0070ba none repeat scroll 0 0;
+    /* padding:0.5rem; */
+    padding: 13px 30px 15px;
+    /* border-radius: 30px; */
+    line-height: 1;
+    margin:15px 0px 30px 0px;
+    /* margin-top: 10px; */
+    font-size: 1.07143rem;
+    border-radius: 25px;
+    
+}
+.summary1{
+   
+    color: #0070ba ;
+    
+    border-radius: 30px;
+    line-height: 1;
+    margin:10px 0px 30px 0px;
+    /* margin-top: 10px; */
+    font-size: 1.07143rem;
+    border-radius: 25px;
+    
+    
+}

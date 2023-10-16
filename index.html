@@ -6,14 +6,18 @@
     <title>PayPal</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
 </head>
 <body>
-    <nav class="custom-navbar navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top" id="navibar">
+    
+    
+    <nav class="custom-navbar navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top" id="navibar" style="padding: 0px 30px 0px 30px;">
+       
         <a class="navbar-brand" id="userpic" href="#">
-            <img class="userimg" src="user.png" alt="Profile Picture" width="50">
+            <img class="userimg" src="images/user.png" alt="Profile Picture" width="50" >
         </a>
-        <a class="navbar-brand" href="#">
-            <img src="paypal.png" alt="Profile Picture" width="50">
+        <a class="navbar-brand " href="#" >
+            <img src="images/paypal.png" alt="Profile Picture" width="80" style="margin-bottom: 6%;">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -23,13 +27,13 @@
             <ul class="navbar-nav">
 
                 <li class="nav-item">
-                    <a class="transparent-button" aria-current="page" href="#">Home</a>
+                    <a class="transparent-button" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="transparent-button" aria-current="page" href="#">Finances</a>
                 </li>
                 <li class="nav-item">
-                    <a class="transparent-button" aria-current="page" href="#">Send and Request</a>
+                    <a class="transparent-button" aria-current="page" href="index.html">Send and Request</a>
                 </li>
                 <li class="nav-item">
                     <a class="transparent-button" aria-current="page" href="#">Deals</a>
@@ -38,10 +42,19 @@
                     <a class="transparent-button" aria-current="page" href="#">Wallets</a>
                 </li>
                 <li class="nav-item">
-                    <a class="transparent-button" aria-current="page" href="#">Help</a>
+                    <a class="transparent-button " aria-current="page" href="https://www.paypal.com/bm/cshelp/personal">Help</a>
                 </li>
+                <li class="nav-item">
+                    <a class="transparent-button" aria-current="page" href="https://www.paypal.com/bm/smarthelp/contact-us">Contact</a>
+                </li>
+                <div>
+                    <li class="nav-item">
+                        <a class="transparent-button" aria-current="page" href="https://www.paypal.com/bm/home" style="margin-left: 1000%;">LOGOUT</a>
+                    </li>
+                </div>
+                
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle dropdown-menu-right" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle dropdown-menu-right" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-left: -219%;">
                         More
                     </a>
                     <ul class="dropdown-menu">
@@ -66,28 +79,34 @@
                 
             </ul>
         </div>
-        <!-- ... (rest of the navigation menu) -->
     </nav>
+
     <div class="paypal-container">
-        <div class="paypal-logo" id="checkmark-imager"></div>
+        <div class="paypal-logo"></div>
         <div class="balance-display"><span>Balance: $</span><span id="balance">1000.00</span></div>
         <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="text" id="email" placeholder="Enter recipient's email">
+            <label for="email" >Email:</label>
+            <input type="text" id="email" placeholder="Name,@user,email">
         </div>
         <div class="form-group">
             <label for="amount">Amount (USD):</label>
             <input type="text" id="amount" placeholder="Enter amount">
         </div>
         <button type="button" class="btn btn-outline-success btn-sm" id="send-button" onclick="sendMoney()">Send Money </button>
-        <div class="checkmark-imager" id="checkmark-image"></div>
-        <div class="confirmation" id="confirmation"></div>
+        <!-- <div class="checkmark-imager" id="checkmark-image"></div>
+        <div class="confirmation" id="confirmation" ></div> -->
+        
+        
     </div>
-    <script src="app.js"></script>
+    
+    
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+
+
 </body>
 </html>
-
